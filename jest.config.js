@@ -6,6 +6,7 @@ const config = {
     collectCoverageFrom: ['src/**/*.js'],
     coverageDirectory: '/tmp',
     coveragePathIgnorePatterns: [
+        'main\.js'
     ],
     coverageReporters: ['text'],
 };
