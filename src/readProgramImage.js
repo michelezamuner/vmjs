@@ -1,0 +1,1 @@
+module.exports = readFileSync => (file, options) => readFileSync(file, options);
