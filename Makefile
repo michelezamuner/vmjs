@@ -10,6 +10,6 @@ env.ssh: env.build
 env.run:
 	@docker run --rm $(env)
 app.install:
-	@yarn install
+	@yarn
 app.ci:
 	@yarn run ci

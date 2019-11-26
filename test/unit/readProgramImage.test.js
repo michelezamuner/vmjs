@@ -6,8 +6,8 @@ describe('read program image', () => {
         const expected = 'image';
         const readFileSync = (file, opt) =>
             file === objectFile && opt.encoding === 'utf-8' ? expected : null;
-        
         const options = { encoding: 'utf-8'};
+        
         const image = readProgramImage(readFileSync)(objectFile, options);
 
         expect(image).toBe(expected);

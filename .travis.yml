@@ -1,7 +1,5 @@
 sudo: required
 
-language: javascript
-
 services:
   - docker
 
@@ -9,7 +7,7 @@ before_install:
   - make env.build
 
 script:
-  - make app.ci
+  - make env.run
 
 notifications:
   email: false
