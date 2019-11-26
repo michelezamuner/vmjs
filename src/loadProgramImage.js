@@ -1,0 +1,1 @@
+module.exports = createMemory => image => createMemory(parseInt(image));

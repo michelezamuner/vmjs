@@ -6,4 +6,4 @@ WORKDIR /app
 
 COPY . /app
 
-CMD make install ci
+CMD make app.install app.ci
