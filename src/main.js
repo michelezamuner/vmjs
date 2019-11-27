@@ -7,7 +7,7 @@ const exec = require('./exec')(readMemory);
 
 module.exports = () => {
     const programFile = process.argv.slice(2)[0];
-    const image = readProgramImage(programFile, { encoding: 'utf-8'});
+    const image = readProgramImage(programFile);
     const memory = loadProgramImage(image);
     const exitStatus = exec(memory);
     process.exit(exitStatus);
