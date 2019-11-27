@@ -1,1 +1,3 @@
-module.exports = readFileSync => (file, options) => readFileSync(file, options);
+module.exports =
+    readFileSync =>
+        file => readFileSync(file, { encoding: 'binary' });
