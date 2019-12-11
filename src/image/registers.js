@@ -1,0 +1,18 @@
+module.exports = {
+    eax: { _addr: 0x00, _size: 0x04 },
+    ax: { _addr: 0x02, _size: 0x02 },
+    ah: { _addr: 0x02, _size: 0x01 },
+    al: { _addr: 0x03, _size: 0x01 },
+    ebx: { _addr: 0x04, _size: 0x04 },
+    bx: { _addr: 0x06, _size: 0x02 },
+    bh: { _addr: 0x06, _size: 0x01 },
+    bl: { _addr: 0x07, _size: 0x01 },
+    ecx: { _addr: 0x08, _size: 0x04 },
+    cx: { _addr: 0x0A, _size: 0x02 },
+    ch: { _addr: 0x0A, _size: 0x01 },
+    cl: { _addr: 0x0B, _size: 0x01 },
+    edx: { _addr: 0x0C, _size: 0x04 },
+    dx: { _addr: 0x0E, _size: 0x02 },
+    dh: { _addr: 0x0E, _size: 0x01 },
+    dl: { _addr: 0x0F, _size: 0x01 },
+}
