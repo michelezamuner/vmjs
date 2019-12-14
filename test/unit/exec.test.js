@@ -1,14 +1,12 @@
 const exec = require('../../src/exec');
 
 describe('exec', () => {
-    it('executes the program loaded in memory', () => {
-        const memory = {};
+    it('executes the program contained in the image', () => {
         const expected = 128;
-        const data = [0, 0, 0, 0, 0, 0, 0, expected];
-        const readMemory = m => m === memory ? data : null;
+        const image = { _code: Buffer.from([0, 0, 0, 0, 0, 0, 0, expected]) };
 
-        const actual = exec(readMemory)(memory);
+        const exit_code = exec(image);
 
-        expect(actual).toBe(expected);
+        expect(exit_code).toBe(expected);
     });
 });
