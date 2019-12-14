@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-require('../src/main')();
+const deps = require('../conf/deps');
+const resolve = require('../src/lib/resolve')(require)(deps)('../src/');
+resolve('main')();
