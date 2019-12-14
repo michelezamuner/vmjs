@@ -2,6 +2,7 @@ const loadProgramImage = require('../../src/loadProgramImage');
 
 describe('load program image', () => {
     it('loads the given image into memory', () => {
+        const image = 'image';
         const expected = [0x11, 0x12, 0x13, 0x14];
         const memory = {};
         const createMemory = data => {
@@ -16,9 +17,9 @@ describe('load program image', () => {
 
             return memory;
         };
-        const image = Buffer.from(expected).toString();
+        const encode_binary_string = s => s === image ? expected : null;
         
-        const actual = loadProgramImage(createMemory)(image);
+        const actual = loadProgramImage(createMemory)(encode_binary_string)(image);
 
         expect(actual).toBe(memory);
     });

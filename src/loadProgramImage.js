@@ -1,3 +1,2 @@
-module.exports =
-    createMemory =>
-        image => createMemory(image.split('').map(c => c.charCodeAt(0)));
+module.exports = createMemory => encode_binary_string => image =>
+    createMemory(encode_binary_string(image));

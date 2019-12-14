@@ -1,2 +1,2 @@
-module.exports = readProgramImage => loadProgramImage => exec =>
-    process.exit(exec(loadProgramImage(readProgramImage(process.argv.slice(2)[0]))));
+module.exports = read_binary_file => loadProgramImage => exec =>
+    process.exit(exec(loadProgramImage(read_binary_file(process.argv.slice(2)[0]))));
