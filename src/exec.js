@@ -1,4 +1,2 @@
-module.exports =
-    readMemory =>
-        memory =>
-            Buffer.from(readMemory(memory)).readInt32BE(4);
+module.exports = image =>
+    image._code.readInt32BE(4);
